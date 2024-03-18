@@ -5,6 +5,12 @@ $header-font: "caveat-brush", sans-serif;
 $p-font: "arial", sans-serif;
 
 //Farver
-
+$brown: #50373e;
 
 //MIXINS
+
+@mixin flex(){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

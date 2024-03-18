@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hundens Beskytter</title>
+    <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/beb1eb477d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://use.typekit.net/skx3qzm.css">
 </head>
@@ -13,53 +14,56 @@
         <!--Navigations Header-->
 
         <!--Mobil menu-->
-        <nav>
+        <nav class="mobile">
             <a href="index.html"><i class="fa-solid fa-dog" style="color: #50373e;"></i></a>
             <i class="fa-solid fa-bars" style="color: #50373e;"></i>
         </nav>
 
         <!--Desktop menu-->
-        <nav>
+        <nav class="desktop">
             <ul>
-                <li><a href="#" class="active">Hjem</a></li>
+                <li><a href="index.html"><i class="fa-solid fa-dog" style="color: burlywood;"></i></a></li>
+                <li><a href="index.html" class="active">Hjem</a></li>
                 <li><a href="#">Sundhed</a></li>
                 <li><a href="#">Træning</a></li>
                 <li><a href="#">Pleje</a></li>
-                <li><a href="#">Om os</a></li>
+                <li><a href="#">Om</a></li>
                 <li><a href="#">Kontakt</a></li>
             </ul>
         </nav>
     </header>
 
-    <header>
-        <!--Banner Header-->
+    <!--Banner Section-->
 
-        <img src="" alt="">
-        <div>
-            <h1>Du er din hunds beskytter, tjener og bedste ven. </h1>
-            <p>Som hundeejer er du ikke bare ejer. Du er den ansvarlige for at give din hund et godt og langt liv - og det vil vi gerne hjælpe dig med. </p>
+    <section class="banner">
+        <img src="fotos/hundensbeskytter1.jpg" alt="">
+        <div class="banner-tekst">
+            <h1>Du er din hunds beskytter, <br>tjener og bedste ven. </h1>
+            <p>Som hundeejer er du ikke bare ejer.</p>
+            <p>Du er den ansvarlige for at give din hund et godt og langt liv</p>
+            <p>- det vil vi gerne hjælpe dig med.</p>
         </div>
-    </header>
+    </section>
 
     <main>
 
         <h2>Lær mere om, hvordan du bedst muligt hjælper din hund gennem sundhed, træning og pleje.</h2>
 
-        <section>
-            <div>
-                <img src="" alt="">
+        <section class="cta-container">
+            <div class="cta-emne">
+                <img src="fotos/sundhed.jpg" alt="">
                 <h3>Sundhed</h3>
                 <p>Helbred spiller en stor rolle i livskvalitet, også for din hunds.</p>
                 <a href=""></a>
             </div>
-            <div>
-                <img src="" alt="">
+            <div class="cta-emne">
+                <img src="fotos/traening.jpg" alt="">
                 <h3>Træning</h3>
                 <p>Lær at kommunikere med din hund og styrk jeres samarbejde.</p>
                 <a href=""></a>
             </div>
-            <div>
-                <img src="" alt="">
+            <div class="cta-emne">
+                <img src="fotos/kaerlighed.jpg" alt="">
                 <h3>Pleje</h3>
                 <p>Omsorg kan ydes på mange måder, at pleje din hund fysisk er en vigtig del.</p>
                 <a href=""></a>
@@ -74,7 +78,7 @@
                 <li><a href="#">Sundhed</a></li>
                 <li><a href="#">Træning</a></li>
                 <li><a href="#">Pleje</a></li>
-                <li><a href="#">Om os</a></li>
+                <li><a href="#">Om</a></li>
                 <li><a href="#">Kontakt</a></li>
             </ul>
         </nav>

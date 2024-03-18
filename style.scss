@@ -1,0 +1,118 @@
+@use 'partials';
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img{
+    width: 100%;
+}
+
+//HEADER
+
+header{
+    @include partials.flex;
+    
+
+        nav{
+            height: 4em;
+            margin: 2%;
+        }
+
+            .mobile{
+                display: none;
+            }
+
+            ul{
+                @include partials.flex;
+                list-style: none;
+                font-family: partials.$header-font;
+                gap: 2em;
+                font-size: 2em;
+            }
+
+                a{
+                    color: partials.$brown;
+                    text-decoration: none;
+                
+
+                    &:hover{
+                        color: burlywood;
+                        background-color: partials.$brown;
+                        border-radius: 2em;
+                        padding: 4%;
+                    }
+
+                    .active{
+                        background-color: partials.$brown;
+                        color: antiquewhite;
+                        border-radius: 2em;
+                        padding: 4%;
+                    }
+                }
+
+}
+
+.banner{
+    
+    img{
+        position: relative;
+        margin-bottom: 1em;
+    }
+
+    .banner-tekst{
+        top: 5em;
+        margin: 5% 5%;
+        position: absolute;
+        background-color: rgba(partials.$brown, $alpha: 0.5);
+        padding: 2%;
+        border-radius: 2em;
+    }
+
+        h1{
+            font-family: partials.$header-font;
+            font-size: 4rem;
+            color: antiquewhite;
+        }
+
+        p{
+            font-family: partials.$p-font;
+            font-size: 1.5rem;
+            color: antiquewhite;
+            line-height: 1.5;
+            padding-top: 2%;
+        }
+}
+
+//FORSIDE
+
+//CTA-bokse
+.cta-container{
+    @include partials.flex;
+}
+.cta-emne{
+    width: 20vw;
+    padding: 2em;
+    margin: 2em auto;
+    background-color: bisque;
+
+        img{
+            display: block;
+            margin: 0 auto;
+            width: 60%;
+        }
+}
+
+//MEDIA QUERIES
+
+@media screen and (max-width: 890px){
+    
+header{
+    .mobile{
+        @include partials.flex;
+    }
+    .desktop{
+        display: none;
+    }
+}
+}
