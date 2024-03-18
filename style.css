@@ -3,8 +3,16 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: antiquewhite;
+}
+
 img {
   width: 100%;
+}
+
+h1, h2, h3 {
+  font-family: "caveat-brush", sans-serif;
 }
 
 header {
@@ -45,9 +53,13 @@ header a .active {
   padding: 4%;
 }
 
+.banner {
+  margin-bottom: 1em;
+  height: 100vh;
+  overflow-y: scroll;
+}
 .banner img {
   position: relative;
-  margin-bottom: 1em;
 }
 .banner .banner-tekst {
   top: 5em;
@@ -58,7 +70,6 @@ header a .active {
   border-radius: 2em;
 }
 .banner h1 {
-  font-family: "caveat-brush", sans-serif;
   font-size: 4rem;
   color: antiquewhite;
 }
@@ -70,29 +81,89 @@ header a .active {
   padding-top: 2%;
 }
 
+h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  color: #50373e;
+  margin: 0 2%;
+}
+
 .cta-container {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .cta-emne {
-  width: 20vw;
+  width: 400px;
   padding: 2em;
   margin: 2em auto;
   background-color: bisque;
+  text-align: center;
+  color: #50373e;
+  border-radius: 4em;
 }
 .cta-emne img {
   display: block;
   margin: 0 auto;
-  width: 60%;
+  width: 80%;
+  border-radius: 4em;
+}
+.cta-emne h3 {
+  font-size: 2em;
+}
+.cta-emne p {
+  font-family: "arial", sans-serif;
+  font-size: 1em;
+  margin: 4%;
+}
+.cta-emne a {
+  border: solid 2px;
+  border-color: #50373e;
+  border-radius: 8em;
+  background-color: #50373e;
+  padding: 2%;
+  color: bisque;
+  font-family: "arial", sans-serif;
+  font-size: 1em;
+  text-decoration: none;
+}
+.cta-emne a:hover {
+  background-color: antiquewhite;
+  color: #50373e;
+}
+
+footer {
+  background-color: #50373e;
+  color: antiquewhite;
+  font-family: "arial", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 6%;
+  line-height: 2em;
+}
+footer ul {
+  list-style: none;
+}
+footer a {
+  text-decoration: none;
+  color: antiquewhite;
+}
+footer a:hover {
+  color: bisque;
+}
+footer i {
+  font-size: 5em;
+  align-self: center;
 }
 
 @media screen and (max-width: 890px) {
   header .mobile {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: block;
+    justify-content: space-between;
+    font-size: 4em;
   }
   header .desktop {
     display: none;

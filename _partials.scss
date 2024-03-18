@@ -14,3 +14,20 @@ $brown: #50373e;
     justify-content: center;
     align-items: center;
 }
+
+@mixin button(){
+    border: solid 2px;
+    border-color: $brown;
+    border-radius: 8em;
+    background-color: $brown;
+    padding: 2%;
+    color: bisque;
+    font-family: $p-font;
+    font-size: 1em;
+    text-decoration: none;
+
+        &:hover{
+            background-color: antiquewhite;
+            color: $brown;
+        }
+}
