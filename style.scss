@@ -68,7 +68,7 @@ header{
 
 .banner{
     margin-bottom: 1em;
-    height: 100vh;
+    height: 30em;
     overflow-y: scroll;
 
     img{
@@ -118,7 +118,7 @@ h2{
     width: 400px;
     padding: 2em;
     margin: 2em auto;
-    background-color: partials.$butter;
+    background-color: partials.$creme;
     text-align: center;
     color: partials.$brown;
     border-radius: 4em;
@@ -143,6 +143,14 @@ h2{
         a{
            @include partials.button;
         }
+}
+
+.article-section{
+    @include partials.flex;
+    flex-wrap: wrap;
+    article{
+        @include partials.article;
+    }
 }
 
 //FOOTER
