@@ -46,21 +46,23 @@ header{
                 
 
                     &:hover{
-                        color: partials.$buttter;
+                        color: partials.$butter;
                         background-color: partials.$brown;
-                        border-radius: 2em;
-                        padding: 4%;
-                    }
-
-                    .active{
-                        background-color: partials.$brown;
-                        color: partials.$antique;
                         border-radius: 2em;
                         padding: 4%;
                     }
                 }
 
 }
+
+.active{
+    background-color: partials.$butter;
+    color: partials.$brown;
+    border-radius: 2em;
+    padding: 4%;
+
+}
+
 
 //Banner
 

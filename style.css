@@ -46,9 +46,10 @@ header a:hover {
   border-radius: 2em;
   padding: 4%;
 }
-header a .active {
-  background-color: #50373e;
-  color: antiquewhite;
+
+.active {
+  background-color: burlywood;
+  color: #50373e;
   border-radius: 2em;
   padding: 4%;
 }
@@ -99,7 +100,7 @@ h2 {
   width: 400px;
   padding: 2em;
   margin: 2em auto;
-  background-color: bisque;
+  background-color: burlywood;
   text-align: center;
   color: #50373e;
   border-radius: 4em;
