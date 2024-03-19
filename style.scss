@@ -153,6 +153,22 @@ h2{
     }
 }
 
+.kontakt-button{
+    display: block;
+    margin: 0 auto 10%;
+    text-align: center;
+
+    p{
+        font-family: partials.$p-font;
+        padding: 5%;
+        font-size: 1.5em;
+        color: partials.$brown;
+    }
+    a{
+        @include partials.button;
+    }
+}
+
 //FOOTER
 
 footer{
@@ -191,7 +207,6 @@ footer{
 header{
     .mobile{
         display: block;
-        justify-content: space-between;
         font-size: 4em;
     }
     .desktop{
