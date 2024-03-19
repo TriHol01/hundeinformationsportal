@@ -158,6 +158,8 @@ h2{
     }
 }
 
+//Kontakt
+
 .kontakt-button{
     display: block;
     margin: 0 auto 10%;
@@ -172,6 +174,57 @@ h2{
     a{
         @include partials.button;
     }
+}
+
+//Kontaktform
+
+.form-bg{
+    background-color: partials.$butter;
+    color: partials.$brown;
+    @include partials.flex;
+
+    .form{
+        background-color: partials.$creme;
+        width: 60%;
+        padding: 1em;
+        margin: 2em auto;
+        border-radius: 4em;
+    }
+        h3{
+            font-size: 2em;
+            text-align: center;
+        }
+        .form-elementer{
+            display: flex;
+        }
+        input, textarea{
+            width: 100%;
+            font-size: 1em;
+            padding: 1em;
+            border: 2px solid partials.$brown;
+            border-radius: 1em;
+            box-sizing: border-box;
+            margin: 1em auto;
+            font-family: partials.$p-font;
+        }
+        button{
+            @include partials.button;
+            display: block;
+            margin: 0 auto;
+            cursor: pointer;
+        }
+}
+
+.visually-hidden{ //Lånt for at fjerne beskrivende tekst visuelt mens det stadig er tilgængeligt for skærmlæser
+    position: absolute !important;
+	width: 1px !important;
+	height: 1px !important;
+	padding: 0 !important;
+	margin: -1px !important;
+	overflow: hidden !important;
+	clip: rect(0,0,0,0) !important;
+	white-space: nowrap !important;
+	border: 0 !important;
 }
 
 //FOOTER

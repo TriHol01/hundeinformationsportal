@@ -188,6 +188,68 @@ h2 {
   color: #50373e;
 }
 
+.form-bg {
+  background-color: burlywood;
+  color: #50373e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form-bg .form {
+  background-color: bisque;
+  width: 60%;
+  padding: 1em;
+  margin: 2em auto;
+  border-radius: 4em;
+}
+.form-bg h3 {
+  font-size: 2em;
+  text-align: center;
+}
+.form-bg .form-elementer {
+  display: flex;
+}
+.form-bg input, .form-bg textarea {
+  width: 100%;
+  font-size: 1em;
+  padding: 1em;
+  border: 2px solid #50373e;
+  border-radius: 1em;
+  box-sizing: border-box;
+  margin: 1em auto;
+  font-family: "arial", sans-serif;
+}
+.form-bg button {
+  border: solid 2px;
+  border-color: #50373e;
+  border-radius: 8em;
+  background-color: #50373e;
+  padding: 2%;
+  color: bisque;
+  font-family: "arial", sans-serif;
+  font-size: 1em;
+  text-decoration: none;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+}
+.form-bg button:hover {
+  background-color: antiquewhite;
+  color: #50373e;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
 footer {
   background-color: #50373e;
   color: antiquewhite;

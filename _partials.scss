@@ -24,13 +24,13 @@ $antique: antiquewhite;
     border-radius: 8em;
     background-color: $brown;
     padding: 2%;
-    color: bisque;
+    color: $creme;
     font-family: $p-font;
     font-size: 1em;
     text-decoration: none;
 
         &:hover{
-            background-color: antiquewhite;
+            background-color: $antique;
             color: $brown;
         }
 }
