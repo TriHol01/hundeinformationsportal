@@ -15,6 +15,10 @@ h1, h2, h3 {
   font-family: "caveat-brush", sans-serif;
 }
 
+main h2 {
+  margin: 4%;
+}
+
 header {
   display: flex;
   justify-content: center;
@@ -55,7 +59,6 @@ header a:hover {
 }
 
 .banner {
-  margin-bottom: 1em;
   height: 30em;
   overflow-y: scroll;
 }
