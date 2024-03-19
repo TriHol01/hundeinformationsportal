@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color: antiquewhite;
+    background-color: partials.$antique;
 }
 
 img{
@@ -46,7 +46,7 @@ header{
                 
 
                     &:hover{
-                        color: burlywood;
+                        color: partials.$buttter;
                         background-color: partials.$brown;
                         border-radius: 2em;
                         padding: 4%;
@@ -54,7 +54,7 @@ header{
 
                     .active{
                         background-color: partials.$brown;
-                        color: antiquewhite;
+                        color: partials.$antique;
                         border-radius: 2em;
                         padding: 4%;
                     }
@@ -84,13 +84,13 @@ header{
 
         h1{
             font-size: 4rem;
-            color: antiquewhite;
+            color: partials.$antique;
         }
 
         p{
             font-family: partials.$p-font;
             font-size: 1.5rem;
-            color: antiquewhite;
+            color: partials.$antique;
             line-height: 1.5;
             padding-top: 2%;
         }
@@ -116,7 +116,7 @@ h2{
     width: 400px;
     padding: 2em;
     margin: 2em auto;
-    background-color: bisque;
+    background-color: partials.$butter;
     text-align: center;
     color: partials.$brown;
     border-radius: 4em;
@@ -147,7 +147,7 @@ h2{
 
 footer{
     background-color: partials.$brown;
-    color: antiquewhite;
+    color: partials.$antique;
     font-family: partials.$p-font;
     display: flex;
     justify-content: space-between;
@@ -161,10 +161,10 @@ footer{
 
         a{
             text-decoration: none;
-            color: antiquewhite;
+            color: partials.$antique;
 
                 &:hover{
-                    color: bisque;
+                    color: partials.$butter;
                 }
         }
 
